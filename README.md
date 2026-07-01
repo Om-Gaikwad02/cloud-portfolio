@@ -62,8 +62,6 @@ cloud-portfolio/
 Om Gaikwad
 Aspiring Cloud & Cloud Security Engineer
 Building practical cloud projects one step at a time.
-
-
 Aspiring Cloud & Cloud Security Engineer
 
 Building practical cloud projects one step at a time.
