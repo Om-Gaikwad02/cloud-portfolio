@@ -9,6 +9,23 @@ This project is part of my hands-on cloud engineering learning journey. Instead 
 This portfolio website is deployed on an AWS EC2 instance running Ubuntu. The web server is configured using Nginx, and the project is managed with Git and GitHub.
 
 The objective of this project was to gain practical experience with cloud infrastructure, Linux administration, web hosting, and version control.
+## 📸 Project Screenshots
+
+### Portfolio Website
+
+![Portfolio Website](screenshots/portfolio.png)
+
+---
+
+### AWS EC2 Instance
+
+![AWS EC2](screenshots/AWS EC2 instance.png)
+
+---
+
+### GitHub Repository
+
+![GitHub Repository](screenshots/repository.png)
 
 ## Technologies Used
 * AWS EC2
