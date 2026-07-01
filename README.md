@@ -19,7 +19,7 @@ The objective of this project was to gain practical experience with cloud infras
 
 ### AWS EC2 Instance
 
-![AWS EC2](screenshots/AWS EC2 instance.png)
+![AWS EC2](screenshots/instance.png)
 
 ---
 
