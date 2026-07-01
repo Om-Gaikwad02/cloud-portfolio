@@ -10,8 +10,6 @@ This portfolio website is deployed on an AWS EC2 instance running Ubuntu. The we
 
 The objective of this project was to gain practical experience with cloud infrastructure, Linux administration, web hosting, and version control.
 
----
-
 ## Technologies Used
 * AWS EC2
 * Ubuntu Linux
