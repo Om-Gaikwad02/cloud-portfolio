@@ -3,298 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Om Gaikwad | Cloud & Security Portfolio</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f4f7fb;
-            color: #222;
-        }
-
-        header {
-            background: #0f172a;
-            color: white;
-            text-align: center;
-            padding: 50px 20px;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 42px;
-        }
-
-        header p {
-            font-size: 20px;
-            color: #cbd5e1;
-        }
-
-        section {
-            max-width: 900px;
-            margin: 30px auto;
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-        }
-
-        h2 {
-            color: #0f172a;
-            border-bottom: 2px solid #38bdf8;
-            padding-bottom: 8px;
-        }
-
-        .skills span {
-            display: inline-block;
-            background: #e0f2fe;
-            color: #075985;
-            padding: 10px 14px;
-            margin: 8px;
-            border-radius: 20px;
-            font-weight: bold;
-        }
-
-        .project {
-            margin-bottom: 20px;
-            padding: 15px;
-            border-left: 4px solid #38bdf8;
-            background: #f8fafc;
-        }
-
-        footer {
-            text-align: center;
-            padding: 25px;
-            background: #0f172a;
-            color: white;
-            margin-top: 40px;
-        }
-
-        a {
-            color: #0284c7;
-            text-decoration: none;
-            font-weight: bold;
-        }
-    </style>
+    <title>Om Gaikwad | Cloud & Security Engineer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <h1>Om Gaikwad</h1>
-    <p>Aspiring Cloud & Security Engineer | AWS | Linux | Networking</p>
-</header>
+    <nav class="navbar">
+        <div class="logo">Om Gaikwad</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-<section>
-    <h2>About Me</h2>
-    <p>
-        I am an MCA student building practical skills in Cloud Computing,
-        Linux Administration, AWS, Networking, GitHub, and Cloud Security.
-        My goal is to become a Cloud Engineer and grow into Cloud Security Engineering.
-    </p>
-</section>
+    <section class="hero">
+        <h1>Hi, I'm Om Gaikwad</h1>
+        <h2>Aspiring Cloud & Security Engineer</h2>
+        <p>I build hands-on cloud projects using AWS, Linux, Networking, and Security fundamentals.</p>
+        <div class="hero-buttons">
+            <a href="#projects" class="btn primary">View Projects</a>
+            <a href="#contact" class="btn secondary">Contact Me</a>
+        </div>
+    </section>
 
-<section>
-    <h2>Technical Skills</h2>
-    <div class="skills">
-        <span>Linux</span>
-        <span>AWS EC2</span>
-        <span>IAM</span>
-        <span>Security Groups</span>
-        <span>Nginx</span>
-        <span>Git & GitHub</span>
-        <span>Networking</span>
-        <span>Cloud Security</span>
-    </div>
-</section>
-
-<section>
-    <h2>Projects</h2>
-
-    <div class="project">
-        <h3>AWS EC2 Web Server</h3>
+    <section id="about" class="section">
+        <h2>About Me</h2>
         <p>
-            Launched an Ubuntu EC2 instance, connected using SSH,
-            installed Nginx, configured Security Groups, and hosted a live website.
+            I am an MCA student focused on building practical skills in Cloud Computing,
+            AWS, Linux Administration, Networking, GitHub, and Cloud Security.
+            My goal is to become a Cloud Engineer and grow into Cloud Security Engineering.
         </p>
-    </div>
+    </section>
 
-    <div class="project">
-        <h3>AWS IAM Security Setup</h3>
-        <p>
-            Secured AWS root account using MFA, created IAM admin user,
-            configured user group and permission policies.
-        </p>
-    </div>
+    <section id="skills" class="section">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <span>AWS EC2</span>
+            <span>IAM</span>
+            <span>Linux</span>
+            <span>Nginx</span>
+            <span>Security Groups</span>
+            <span>Networking</span>
+            <span>Git & GitHub</span>
+            <span>Cloud Security</span>
+        </div>
+    </section>
 
-    <div class="project">
-        <h3>Linux User Management Lab</h3>
-        <p>
-            Created Linux users, managed sudo permissions, practiced user groups,
-            file permissions, and command-line administration.
-        </p>
-    </div>
+    <section id="projects" class="section">
+        <h2>Featured Projects</h2>
 
-</section>
+        <div class="project-card">
+            <h3>AWS EC2 Web Server</h3>
+            <p>Launched Ubuntu EC2, connected using SSH, installed Nginx, configured Security Groups, and hosted a live website.</p>
+        </div>
 
-<section>
-    <h2>Contact</h2>
-    <p>GitHub: <a href="https://github.com/Om-Gaikwad02" target="_blank">github.com/Om-Gaikwad02</a></p>
-    <p>LinkedIn: Add your LinkedIn profile link here</p>
-</section>
+        <div class="project-card">
+            <h3>AWS IAM Security Setup</h3>
+            <p>Secured AWS root account with MFA, created IAM admin user, configured groups and permissions.</p>
+        </div>
 
-<footer>
-    <p>Hosted on AWS EC2 using Ubuntu and Nginx</p>
-</footer>
+        <div class="project-card">
+            <h3>Linux Administration Lab</h3>
+            <p>Practiced users, groups, sudo access, chmod permissions, and basic Linux administration.</p>
+        </div>
+    </section>
 
-</body>
-</html>
-ubuntu@ip-172-31-46-84:/var/www/html$ sudo nano index.html
-ubuntu@ip-172-31-46-84:/var/www/html$ cat /var/www/html/index.html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Om Gaikwad | Cloud & Security Portfolio</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f4f7fb;
-            color: #222;
-        }
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>GitHub: <a href="https://github.com/Om-Gaikwad02" target="_blank">github.com/Om-Gaikwad02</a></p>
+        <p>LinkedIn:<a href="https://www.linkedin.com/in/om-gaikwad-079743249" target="_blank">linkdin.com/Om Gaikwad</a></p>
+    </section>
 
-        header {
-            background: #0f172a;
-            color: white;
-            text-align: center;
-            padding: 50px 20px;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 42px;
-        }
-
-        header p {
-            font-size: 20px;
-            color: #cbd5e1;
-        }
-
-        section {
-            max-width: 900px;
-            margin: 30px auto;
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-        }
-
-        h2 {
-            color: #0f172a;
-            border-bottom: 2px solid #38bdf8;
-            padding-bottom: 8px;
-        }
-
-        .skills span {
-            display: inline-block;
-            background: #e0f2fe;
-            color: #075985;
-            padding: 10px 14px;
-            margin: 8px;
-            border-radius: 20px;
-            font-weight: bold;
-        }
-
-        .project {
-            margin-bottom: 20px;
-            padding: 15px;
-            border-left: 4px solid #38bdf8;
-            background: #f8fafc;
-        }
-
-        footer {
-            text-align: center;
-            padding: 25px;
-            background: #0f172a;
-            color: white;
-            margin-top: 40px;
-        }
-
-        a {
-            color: #0284c7;
-            text-decoration: none;
-            font-weight: bold;
-        }
-    </style>
-</head>
-<body>
-
-<header>
-    <h1>Om Gaikwad</h1>
-    <p>Aspiring Cloud & Security Engineer | AWS | Linux | Networking</p>
-</header>
-
-<section>
-    <h2>About Me</h2>
-    <p>
-        I am an MCA student building practical skills in Cloud Computing,
-        Linux Administration, AWS, Networking, GitHub, and Cloud Security.
-        My goal is to become a Cloud Engineer and grow into Cloud Security Engineering.
-    </p>
-</section>
-
-<section>
-    <h2>Technical Skills</h2>
-    <div class="skills">
-        <span>Linux</span>
-        <span>AWS EC2</span>
-        <span>IAM</span>
-        <span>Security Groups</span>
-        <span>Nginx</span>
-        <span>Git & GitHub</span>
-        <span>Networking</span>
-        <span>Cloud Security</span>
-    </div>
-</section>
-
-<section>
-    <h2>Projects</h2>
-
-    <div class="project">
-        <h3>AWS EC2 Web Server</h3>
-        <p>
-            Launched an Ubuntu EC2 instance, connected using SSH,
-            installed Nginx, configured Security Groups, and hosted a live website.
-        </p>
-    </div>
-
-    <div class="project">
-        <h3>AWS IAM Security Setup</h3>
-        <p>
-            Secured AWS root account using MFA, created IAM admin user,
-            configured user group and permission policies.
-        </p>
-    </div>
-
-    <div class="project">
-        <h3>Linux User Management Lab</h3>
-        <p>
-            Created Linux users, managed sudo permissions, practiced user groups,
-            file permissions, and command-line administration.
-        </p>
-    </div>
-
-</section>
-
-<section>
-    <h2>Contact</h2>
-    <p>GitHub: <a href="https://github.com/Om-Gaikwad02" target="_blank">github.com/Om-Gaikwad02</a></p>
-    <p>LinkedIn:</p>
-</section>
-
-<footer>
-    <p>Hosted on AWS EC2 using Ubuntu and Nginx</p>
-</footer>
+    <footer>
+        <p>Hosted on AWS EC2 using Ubuntu and Nginx</p>
+    </footer>
 
 </body>
 </html>
