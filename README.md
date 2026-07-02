@@ -80,3 +80,41 @@ Building practical cloud projects one step at a time.
 Aspiring Cloud & Cloud Security Engineer
 
 Building practical cloud projects one step at a time.
+
+
+##  *Project 2*: Custom AWS VPC Web Server
+
+This project extends the portfolio deployment by hosting it inside a custom AWS network designed from scratch.
+
+### Infrastructure Built
+
+* Created a custom VPC (`om-vpc`)
+* Created a public subnet (`om-public-subnet`)
+* Created and attached an Internet Gateway (`om-igw`)
+* Created a custom Route Table (`om-public-rt`)
+* Configured the default route (`0.0.0.0/0`) to the Internet Gateway
+* Associated the Route Table with the public subnet
+* Launched an Ubuntu EC2 instance inside the custom VPC
+* Installed and configured Nginx
+* Deployed the portfolio website successfully
+
+### Skills Practiced
+
+* AWS VPC
+* Public Subnets
+* Internet Gateway
+* Route Tables
+* Security Groups
+* EC2 Networking
+* Linux Administration
+* Nginx Deployment
+* Git & GitHub
+
+### Key Learning
+
+I learned how Internet traffic reaches an EC2 instance through a custom VPC using an Internet Gateway, Route Table, Public Subnet, and Security Group. I also deployed a live website inside infrastructure that I designed myself.
+
+## Project 2 Screenshots
+![Coustom-Vpc](Screenshots/vpc.png)
+![Coustum-Subnet](Screenshots/subnet.png)
+![Coustum-Route-Table](Screenshots/routetable.png)
