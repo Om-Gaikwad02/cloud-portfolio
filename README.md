@@ -115,6 +115,70 @@ This project extends the portfolio deployment by hosting it inside a custom AWS 
 I learned how Internet traffic reaches an EC2 instance through a custom VPC using an Internet Gateway, Route Table, Public Subnet, and Security Group. I also deployed a live website inside infrastructure that I designed myself.
 
 ## Project 2 Screenshots
-![Coustom-Vpc](Screenshots/vpc.png)
-![Coustum-Subnet](Screenshots/subnet.png)
-![Coustum-Route-Table](Screenshots/routetable.png)
+![Custom-Vpc](Screenshots/vpc.png)
+![Custum-Subnet](Screenshots/subnet.png)
+![Custum-Route-Table](Screenshots/routetable.png)
+
+
+# Project 3 – Secure Bastion Host Access
+
+## Objective
+
+To securely access an EC2 instance deployed in a private subnet without exposing it directly to the Internet.
+
+## Architecture
+
+Laptop
+↓ SSH using PEM Key
+Bastion Host (Public Subnet)
+↓ SSH using Private IP
+Private EC2 (Private Subnet)
+
+## AWS Services Used
+
+* Amazon EC2
+* Amazon VPC
+* Public Subnet
+* Private Subnet
+* Internet Gateway
+* Route Tables
+* Security Groups
+* SSH Key Pair
+
+## What I Implemented
+
+* Created a custom VPC.
+* Configured separate public and private subnets.
+* Deployed a Bastion Host in the public subnet.
+* Deployed a private EC2 instance without a Public IP.
+* Configured Security Groups to allow SSH only from the Bastion Host.
+* Successfully connected:
+
+  * Laptop → Bastion Host
+  * Bastion Host → Private EC2
+
+## Key Learning
+
+* Difference between Public and Private Subnets.
+* Why private EC2 instances should not have a Public IP.
+* Purpose of a Bastion Host in secure cloud environments.
+* How Security Groups control communication between instances.
+* Practical SSH access using a Bastion Host.
+
+## Challenges Faced
+
+* SSH connection timeout due to Security Group configuration.
+* Verified network path and instance placement.
+* Corrected Security Group rules.
+* Successfully established secure SSH access to the private EC2.
+
+## Outcome
+
+Successfully implemented a secure AWS network architecture where administrative access to a private EC2 is provided through a Bastion Host instead of exposing the server directly to the Internet.
+
+## Project 3 Screenshots
+![Bastion-Host_Instance](Screenshots/project-3/bastion-host.png)
+![Private_instance](Screenshots/project-3/private-instance.png)
+![SSH-Bastion](Screenshots/project-3/ssh-bastion.png)
+![SSH-Private_EC2](Screenshots/project-3/ssh-privateEc2.png)
+![VPC](Screenshots/project-3/vpc.png)
